@@ -600,6 +600,7 @@ textarea::placeholder {
 
 .form-input {
   width: 100%;
+  padding-left: 50%;
 }
 
 .label-text {
@@ -636,3 +637,24 @@ textarea::placeholder {
 .checkboxspan {
   font-size: 12px;
 }
+
+.svg_modal {
+  content: "";
+  position: absolute;
+  transform: translate(16px, 23.5px);
+}
+
+.form-input:hover {
+  /* border-color: transparent;*/
+  box-shadow: red;
+  border-color: red;
+}
+
+/* 
+.form-input:focus {
+  border: #404bbf;
+}
+
+.form-input {
+  border-color: #404bbf;
+} */
