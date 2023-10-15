@@ -669,8 +669,24 @@ textarea::placeholder {
   border-color: transparent;
   box-shadow: transparent;
   border: 1px solid #4d5ae5;
+
   border-radius: 2px;
 }
 .comment_label textarea:focus::placeholder {
   color: transparent;
+}
+
+/* .check {
+  display: none;
+} */
+
+.checkbox_mod {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #2e2f4266;
+}
+
+.checkbox_mod:focus {
+  background-color: #4d5ae5;
 }
