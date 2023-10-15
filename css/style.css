@@ -599,8 +599,12 @@ textarea::placeholder {
 }
 
 .form-input {
-  width: 100%;
-  padding-left: 50%;
+  width: 360px;
+  height: 40px;
+  padding-left: 31px;
+  outline: none;
+  border: 1px solid #2e2f4266;
+  border-radius: 2px;
 }
 
 .label-text {
@@ -641,20 +645,32 @@ textarea::placeholder {
 .svg_modal {
   content: "";
   position: absolute;
-  transform: translate(16px, 23.5px);
+  transform: translate(-345px, 14px);
 }
 
-.form-input:hover {
-  /* border-color: transparent;*/
-  box-shadow: red;
-  border-color: red;
-}
-
-/* 
 .form-input:focus {
-  border: #404bbf;
+  border-color: transparent;
+  box-shadow: transparent;
+  border: 1px solid #4d5ae5;
+  border-radius: 2px;
 }
 
-.form-input {
-  border-color: #404bbf;
-} */
+.form-input:focus + .svg_modal use {
+  fill: #4d5ae5;
+}
+
+.comment_label textarea {
+  outline: none;
+  border: 1px solid #2e2f4266;
+  border-radius: 2px;
+}
+
+.comment_label textarea:focus {
+  border-color: transparent;
+  box-shadow: transparent;
+  border: 1px solid #4d5ae5;
+  border-radius: 2px;
+}
+.comment_label textarea:focus::placeholder {
+  color: transparent;
+}
