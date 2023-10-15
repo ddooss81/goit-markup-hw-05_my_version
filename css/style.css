@@ -676,17 +676,20 @@ textarea::placeholder {
   color: transparent;
 }
 
-/* .check {
-  display: none;
-} */
-
 .checkbox_mod {
+  display: inline-block;
+  transform: translateY(25%);
+  margin-right: 3px;
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid #2e2f4266;
 }
 
-.checkbox_mod:focus {
+.check {
+  display: none;
+}
+
+.check:checked + .checkbox_mod {
   background-color: #4d5ae5;
 }
