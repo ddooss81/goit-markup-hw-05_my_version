@@ -541,7 +541,7 @@ footer {
 
 /*---------------ModalWindow-------------------*/
 .modal_window {
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 1;
   left: 0;
@@ -722,6 +722,6 @@ textarea::placeholder {
   background-color: #4d5ae5;
 }
 
-#button_botoom:hover + #modal_window {
-  display: none;
-}
+/* #button_botoom:checked ~ #modal_window {
+  display: block;
+} */
