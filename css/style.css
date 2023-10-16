@@ -458,7 +458,6 @@ address {
 }
 
 .p_footer_soc {
-  /* margin-right: 120px; */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -466,10 +465,6 @@ address {
   color: #ffffff;
   margin-bottom: 16px;
 }
-
-/* .soc_div_footer{
-            margin-right: 120px
-        } */
 
 .footer_soc_li {
   display: flex;
@@ -546,6 +541,18 @@ footer {
 
 /*---------------ModalWindow-------------------*/
 .modal_window {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_head {
   width: 408px;
   height: 584px;
   margin: auto;
@@ -555,7 +562,6 @@ footer {
 }
 
 .modal_button_exit {
-  /* display: none; */
   width: 24px;
   height: 24px;
   margin-top: 24px;
@@ -570,6 +576,7 @@ footer {
 }
 
 .svg_cross {
+  pointer-events: none;
   transform: translate(0px, -16px);
   fill: #2e2f42;
   margin-left: 368px;
@@ -655,7 +662,6 @@ textarea::placeholder {
   font-weight: 400;
   line-height: 14px;
   letter-spacing: 0.04em;
-  /* text-align: :right; */
   color: #8e8f99;
 }
 
@@ -664,6 +670,7 @@ textarea::placeholder {
 }
 
 .svg_modal {
+  pointer-events: none;
   content: "";
   position: absolute;
   transform: translate(-345px, 14px);
@@ -713,4 +720,8 @@ textarea::placeholder {
 
 .check:checked + .checkbox_mod {
   background-color: #4d5ae5;
+}
+
+#button_botoom:hover + #modal_window {
+  display: none;
 }
